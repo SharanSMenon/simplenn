@@ -7,24 +7,16 @@ Welcome to Neural Network Numpy's documentation!
 ================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-
+   layers
 
 
 Neural Network
-=======================
+----------------
 .. automodule:: simplenn.network
    :members:
 
-Layer
-=======================
-.. automodule:: simplenn.layer
-   :members:
-
 Indices and tables
-==================
+-------------------
 
 * :ref:`genindex`
 * :ref:`modindex`

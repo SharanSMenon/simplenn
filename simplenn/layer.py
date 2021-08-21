@@ -29,11 +29,25 @@ class Activation():
 class Linear():
     """
     Linear Layer
+
+    **Example**:
+
+    .. code-block:: python
+
+        >>> a = np.array([1, 2, 3, 4, 5]).reshape(-1, 1)
+        >>> l = Linear(1, 1)
+        >>> print(l(a))
+        array([[-0.29296088],
+       [-0.89514827],
+       [-1.49733566],
+       [-2.09952306],
+       [-2.70171045]])
+
     """
     def __init__(self, n_in, n_out, name="layer"):
         limit = 1 / np.sqrt(n_in)
         self.W = np.random.uniform(-limit, limit, (n_in, n_out))
-        self.b = np.zeros((1, n_out))  # Biases
+        self.b = np.random.rand(1, n_out)  # Biases
         self.name = name
         self.input = None
         self.output = None

@@ -15,6 +15,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Layers" href="layers.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -34,43 +35,33 @@
   <section id="welcome-to-neural-network-numpy-s-documentation">
 <h1>Welcome to Neural Network Numpy’s documentation!<a class="headerlink" href="#welcome-to-neural-network-numpy-s-documentation" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="layers.html">Layers</a></li>
+</ul>
 </div>
+<section id="module-simplenn.network">
+<span id="neural-network"></span><h2>Neural Network<a class="headerlink" href="#module-simplenn.network" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="simplenn.network.Network">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simplenn.network.</span></span><span class="sig-name descname"><span class="pre">Network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simplenn.network.Network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Neural Network</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="simplenn.network.Sequential">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simplenn.network.</span></span><span class="sig-name descname"><span class="pre">Sequential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simplenn.network.Sequential" title="Permalink to this definition">¶</a></dt>
+<dd><p>An intializer for a sequential Neural Network</p>
+</dd></dl>
+
 </section>
 <section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </section>
-<section id="module-simplenn.layer">
-<span id="neural-network-layers"></span><h1>Neural Network Layers<a class="headerlink" href="#module-simplenn.layer" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt class="sig sig-object py" id="simplenn.layer.Activation">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simplenn.layer.</span></span><span class="sig-name descname"><span class="pre">Activation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">activation</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'activation'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simplenn.layer.Activation" title="Permalink to this definition">¶</a></dt>
-<dd><p>Wrapper layer for activation functions.</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="simplenn.layer.Conv2d">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simplenn.layer.</span></span><span class="sig-name descname"><span class="pre">Conv2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stride</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'layer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'valid'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simplenn.layer.Conv2d" title="Permalink to this definition">¶</a></dt>
-<dd><p>Conv2D layer
-Input shape: (channels, height, width)</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="simplenn.layer.Flatten">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simplenn.layer.</span></span><span class="sig-name descname"><span class="pre">Flatten</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'flatten'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simplenn.layer.Flatten" title="Permalink to this definition">¶</a></dt>
-<dd><p>Flatten layer.</p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="simplenn.layer.Linear">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">simplenn.layer.</span></span><span class="sig-name descname"><span class="pre">Linear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'layer'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#simplenn.layer.Linear" title="Permalink to this definition">¶</a></dt>
-<dd><p>Linear Layer</p>
-</dd></dl>
-
 </section>
 
 
@@ -90,11 +81,15 @@ Input shape: (channels, height, width)</p>
 
 
 <h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="layers.html">Layers</a></li>
+</ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="layers.html" title="next chapter">Layers</a></li>
   </ul></li>
 </ul>
 </div>

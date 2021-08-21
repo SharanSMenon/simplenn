@@ -18,3 +18,11 @@ class Network():
 
     def __call__(self, x):
         return self.forward(x)
+
+class Sequential(Network):
+    """
+    An intializer for a sequential Neural Network
+    """
+    def __init__(self, layers, lr=0.01):
+        super().__init__(lr=lr)
+        self.layers = layers
